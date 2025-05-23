@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Usuarios</title>
+  <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+  <h1>Usuarios registrados</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo</th>
+        <th>Área</th>
+        <th>Rol</th>
+        <th>Especialidad</th>
+        <th>Fecha Registro</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each usuarios}}
+        <tr>
+          <td>{{this.ID}}</td>
+          <td>{{this.Nombre}}</td>
+          <td>{{this.Correo}}</td>
+          <td>{{this.Area}}</td>
+          <td>{{this.Rol}}</td>
+          <td>{{this.Especialidad}}</td>
+          <td>{{this.Fecha_Registro}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Fondo animado modo Chocó */
+body {
+    background: url('../../img/admin.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: moverFondo 60s linear infinite;
+    color: #fff;
+}
+
+/* Animación lenta del fondo */
+@keyframes moverFondo {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Tarjetas transparentes con neblina */
+.card {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+}
